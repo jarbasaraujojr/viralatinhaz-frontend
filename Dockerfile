@@ -10,7 +10,7 @@ RUN npm run build
 # Estágio 2: Rodar a aplicação
 FROM node:18-alpine AS runner
 
-EXPOSE 3000
+EXPOSE 3001
 
 WORKDIR /app
 COPY --from=builder /app/next.config.ts ./
